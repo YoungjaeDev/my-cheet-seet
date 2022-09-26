@@ -1,0 +1,22 @@
+cmake_minimum_required(VERSION 3.5.1)
+
+SET(SOURCES camera-lidar-calib.cpp)
+
+FIND_PACKAGE(PkgConfig REQUIRED)
+
+PKG_CHECK_MODULES(OPENCV4 REQUIRED opencv4)
+
+ADD_EXECUTABLE(camera-lidar-calib ${SOURCES})
+
+TARGET_INCLUDE_DIRECTORIES(camera-lidar-calib PUBLIC
+	${INCLUDE_PATH}
+	${INCLUDE_PATH}/opencv4
+)
+
+TARGET_LINK_LIBRARIES(camera-lidar-calib
+	${OPENCV4_LIBRARIES}
+)
+
+INSTALL(TARGETS camera-lidar-calib
+	RUNTIME DESTINATION ${CMAKE_INSTALL_PREFIX}
+)
