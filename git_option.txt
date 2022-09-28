@@ -1,2 +1,5 @@
 # 커밋에서 변경사항 코드로 표시
 git log -p .
+
+# delete remote branch
+git branch --delete --remotes origin/temp4Merge
