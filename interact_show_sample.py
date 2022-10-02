@@ -1,3 +1,5 @@
+from ipywidgets import interact
+
 @interact(index=(0, len(image_files)-1))
 def show_sample(index=0):
     image_file = image_files[index]
