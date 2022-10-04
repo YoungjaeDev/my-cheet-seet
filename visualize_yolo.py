@@ -7,10 +7,6 @@ CLASS_ID_TO_NAME = {0: 'Bus', 1: 'Truck'}
 BOX_COLOR = {'Bus':(200, 0, 0), 'Truck':(0, 0, 200)}
 TEXT_COLOR = (255, 255, 255)
 
-def save_model(model_state, model_name, save_dir="./trained_model"):
-    os.makedirs(save_dir, exist_ok=True)
-    torch.save(model_state, os.path.join(save_dir, model_name))
-
 
 def visualize_bbox(image, bbox, class_name, color=BOX_COLOR, thickness=2):
     x_center, y_center, w, h = bbox
