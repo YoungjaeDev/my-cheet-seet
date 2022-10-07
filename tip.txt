@@ -1,0 +1,2 @@
+# clipboard -> apt install clipboard
+cat my_data.txt | xclip -selection clipboard
