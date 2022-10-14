@@ -1,0 +1,9 @@
+https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73
+
+export PATH=/usr/local/cuda/bin:${PATH}
+export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
+
+
+# cudnn
+https://developer.nvidia.com/rdp/cudnn-archive
+https://docs.nvidia.com/deeplearning/cudnn/install-guide/index.html
