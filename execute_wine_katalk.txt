@@ -1,0 +1,1 @@
+LANG="ko_KR.UTF-8" wine "/home/yyj/.wine/dosdevices/c:/Program Files (x86)/Kakao/KakaoTalk/KakaoTalk.exe"
