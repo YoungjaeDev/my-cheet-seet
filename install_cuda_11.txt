@@ -1,8 +1,9 @@
 https://gist.github.com/Mahedi-61/2a2f1579d4271717d421065168ce6a73
 
+# nvidia-driver-xxx는 따로 설치한 후에 리부팅 후, .run 파일로 설치 시 드라이버 부분은 해제하고 한다
+
 export PATH=/usr/local/cuda/bin:${PATH}
 export LD_LIBRARY_PATH=/usr/local/cuda/lib64:${LD_LIBRARY_PATH}
-
 
 # cudnn
 https://developer.nvidia.com/rdp/cudnn-archive
