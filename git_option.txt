@@ -3,3 +3,6 @@ git log -p .
 
 # delete remote branch
 git branch --delete --remotes origin/temp4Merge
+
+# remote 브랜치가 upstream일 때 upstream/main을 main-origin으로 링크하기 
+git branch --set-upstream-to=upstream/main main-origin
