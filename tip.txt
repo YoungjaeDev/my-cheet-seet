@@ -1,2 +1,5 @@
 # clipboard -> apt install clipboard
 cat my_data.txt | xclip -selection clipboard
+
+# opencv4.pc 생성
+cp -r /usr/lib/aarch64-linux-gnu/pkgconfig/opencv.pc /usr/lib/aarch64-linux-gnu/pkgconfig/opencv4.pc
