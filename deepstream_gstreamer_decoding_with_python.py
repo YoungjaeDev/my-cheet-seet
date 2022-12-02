@@ -2,6 +2,8 @@ import subprocess as sp
 import cv2
 import numpy as np
 
+# gst-launch-1.0 -vvv rtspsrc location=rtsp://192.168.1.140:554/h264 ! rtph264depay ! h264parse ! queue ! nvv4l2decoder ! nvvideoconvert ! nvdsosd ! nveglglessink sync=0
+
 cmd = ["gst-launch-1.0",
        "rtspsrc", "location=rtsp://admin:password@192.168.2.71/Streaming/Channels/1", "latency=100", "!",
        "queue", "!",
